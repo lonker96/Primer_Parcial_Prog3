@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="/src/assets/css/carrito.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">FoodStore</h1>
+        <div class="header-nav">
+        <a href="/src/pages/store/cart/cart.html" id="link-carrito">Carrito
+            <span id="carrito-count" class="badge">0</span>
+        </a>
+        <a href="/src/pages/store/home.html" id="link-catalogo">Catalogo</a>
+        </div>
+    </header>
+
+    
+    <div>
+        <h2>Tu Pedido</h2>
+        <div class="carrito-layaout">
+            <section id="items-carrito" class="lista-items"></section>
+            <aside id="resumen-container" class="resumen-carrito">
+                <h3>Resumen</h3>
+                <div class="resumen-detalles">
+                    <div class="fila">
+                        <span>Subtotal</span>
+                        <span data-resumen="subtotal">$0</span>
+                    </div>
+                    <div class="fila-total">
+                        <span>Total</span>
+                        <span data-resumen="total" class="total-numero">$0</span>
+                    </div>
+                </div>
+
+                <div class="resumen-acciones">
+                    <button data-action="finalizar" class="btn-primario">Finalizar compra</button>
+                    <p class="alerta">El checkout no esta disponible ne esta version.</p>
+                    <button data-action="vaciar" class="btn-secundario">Vaciar carrito</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <script type="module" src="./cart.ts"></script>
+</body>
+</html>
